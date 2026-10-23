@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="24dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConexionActivity">
+
+    <TextView
+        android:id="@+id/txtTituloConexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Congiguracion de Conexion"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txtEstadoConexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado: Sin Conexion"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"/>
+    <TextView
+        android:id="@+id/txtDispositivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dispositivo: -- "
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="BLUETOOTH"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnWiFi"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Wi-Fi"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnDesconectar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Desconectar"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="VOLVER"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

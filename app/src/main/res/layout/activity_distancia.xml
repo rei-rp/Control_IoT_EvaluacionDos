@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".DistanciaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALERTA DE DISTANCIA"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txtDistancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-- cm"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"/>
+    <TextView
+        android:id="@+id/txtAlerta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitoreo detenido"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"/>
+    <TextView
+        android:id="@+id/txtUmbral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Umbral de alerta: 20 cm"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"/>
+
+    <SeekBar
+        android:id="@+id/seekUmbral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="20"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INICIAR"
+        android:layout_marginTop="24dp"/>
+    <Button
+        android:id="@+id/btnVolverDistancia"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="VOLVER"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
